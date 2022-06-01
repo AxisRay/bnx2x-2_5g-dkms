@@ -9297,7 +9297,7 @@ static void bnx2x_8727_config_speed(struct bnx2x_phy *phy,
 
 		DP(NETIF_MSG_LINK, "Setting 1G clause37\n");
 		bnx2x_cl45_write(bp, phy,
-				 MDIO_AN_DEVAD, MDIO_AN_REG_8727_MISC_CTRL2, 0);
+				 MDIO_AN_DEVAD, MDIO_AN_REG_8727_MISC_CTRL, 0);
 		bnx2x_cl45_write(bp, phy,
 				 MDIO_AN_DEVAD, MDIO_AN_REG_CL37_AN, 0x1300);
 	} else {
@@ -9305,7 +9305,7 @@ static void bnx2x_8727_config_speed(struct bnx2x_phy *phy,
 		 * registers although it is default
 		 */
 		bnx2x_cl45_write(bp, phy,
-				 MDIO_AN_DEVAD, MDIO_AN_REG_8727_MISC_CTRL2,
+				 MDIO_AN_DEVAD, MDIO_AN_REG_8727_MISC_CTRL,
 				 0x0020);
 		bnx2x_cl45_write(bp, phy,
 				 MDIO_AN_DEVAD, MDIO_AN_REG_8727_MISC_CTRL1,
